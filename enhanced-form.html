@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<section>
+		<table>
+			<img src="./online_shopping.jpg" />
+			<caption>Phone Prices</caption>
+			<thead>
+				<tr>
+					<th>Brand</th>
+					<th>Price (Brand New)</th>
+					<th>Price (Refurbished)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Apple Iphone 15 Pro</td>
+					<td>$999</td>
+					<td>$849</td>
+				</tr>
+
+				<tr>
+					<td>Samsung Galaxy S24 Ultra</td>
+					<td>$1,199</td>
+					<td>$950</td>
+				</tr>
+
+				<tr>
+					<td>Google Pixel 8 Pro</td>
+					<td>$999</td>
+					<td>$750</td>
+				</tr>
+
+				<tr>
+					<td>OnePlus 12</td>
+					<td>$799</td>
+					<td>$620</td>
+				</tr>
+
+				<tr>
+					<td>Xiaomi 14 Pro</td>
+					<td>$899</td>
+					<td>$700</td>
+				</tr>
+
+				<tr>
+					<td>Motorola Edge+ (2024)</td>
+					<td>$799</td>
+					<td>$650</td>
+				</tr>
+
+				<tr>
+					<td>Sony Xperia 1 VI</td>
+					<td>$1,299</td>
+					<td>$1,050</td>
+				</tr>
+
+				<tr>
+					<td>ASUS ROG Phone 8 pro</td>
+					<td>$1,099</td>
+					<td>$900</td>
+				</tr>
+
+				<tr>
+					<td>Nothing Phone (2)</td>
+					<td>$599</td>
+					<td>$450</td>
+				</tr>
+
+				<tr>
+					<td>Samsung Galaxy Z Flip 6</td>
+					<td>$1,099</td>
+					<td>$875</td>
+				</tr>
+			</tbody>
+		</table>
+	</section> <br> <br>
+
+	<section>
+		<h3>Device Components we Offer</h3>
+		<ul>
+			<li>Battey</li>
+			<li>Display/Screen</li>
+			<li>Motherboard</li>
+			<li>Speaker/Earpiece/Microphone</li>
+			<li>Jelly</li>
+		</ul>
+
+		<ol>
+			<li>Camera Module</li>
+			<li>Antenaa/Signal Component</li>
+			<li>Buttons (Power, Volume, Home)</li>
+			<li>Vibration Motor</li>
+		</ol>
+	</section> <br> <br>
+
+	<section>
+		<form>
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" placeholder="First Name" required> <br> <br>
+
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" placeholder="Last Name" required> <br> <br>
+
+			<label for="email">Email Address</label>
+			<input type="email" id="email" placeholder="Email Address"> <br> <br>
+
+			<label for="password">Password</label>
+			<input 
+				type="password" 
+				id="password" 
+				required 
+				pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+				title="Password must be at least 8 characters long and include uppercase, lowercase, a number, and a special character."
+			> <br> <br>
+
+			<label for="phone">Phone Number</label>
+			<input type="tel" id="phone" placeholder="Phone Number"> <br> <br>
+
+			<label for="nativecountry">Country of Origin</label>
+			<select id="nativecountry">
+				<option value="Kenya">Kenya</option>
+				<option value="Tanzania">Tanzania</option>
+				<option value="Ethiopia">Ethiopia</option>
+				<option value="Madagascar">Madagascar</option>
+				<option value="South Africa">South Africa</option>
+			</select> <br><br>
+
+			<fieldset>
+				<legend>Gender</legend>
+				<label for="genderM">
+					<input type="radio" id="genderM" value="Male" name="gender">
+					Male
+				</label> <br>
+				<label for="genderF">
+					<input type="radio" id="genderF" value="Female" name="gender">
+					Female
+				</label> <br>
+			</fieldset> <br><br>
+
+			<input type="submit" value="submit">
+		</form>
+	</section>
+</body>
+</html>
